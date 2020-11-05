@@ -75,8 +75,6 @@ url:
   encoding:
     unwiseCharactersToEncode: "|,;,{,}"
 
-logFormat: "vdomain=%v %t remote_host=%{True-Client-IP}i SiteSpectEngine=%{SiteSpect}i Akamai-Origin-Hop=%{Akamai-Origin-Hop}i AkamaiVia=\"%{Via}i\" X-AkamaiConfigLogDetail=\"%{X-Akamai-CONFIG-LOG-DETAIL}i\" forwarded_host=\"%{X-Forwarded-For}i\" ajax=%{X-Requested-With}i method_uri=\"%r\" statuscode=%>s redirect=%{Location}o bytes_sent=%b referer=\"%{Referer}i\" user_agent=\"%{User-Agent}i\" sessid=%{SESSID}C edgescape=\"%{X-Akamai-Edgescape}i\" guid=%{guid}C req_guid=%{X-Hcom-Info}o SSLB=\"%{SSLB}C\" X-hcom-ctx=\"%{X-hcom-ctx}o\"  duration_millis=%d scheme=\"%{SCHEME}e\" domain=\"%{Host}i\" X-Forwarded-Host=\"%{X-Forwarded-Host}i\" X-Forwarded-Server=\"%{X-Forwarded-Server}i\" X-NS-Forwarded-Server=\"%{X-NS-Forwarded-Server}i\" NetscalerFE=\"%{X-hcom-xinfo-NSFEVIP}i\" instance=%R url=%U retries=%N X-Hcom-Styx-Info=%{X-Hcom-Styx-Info}o"
-
 request-logging:
   inbound:
     enabled: ${REQUEST_LOGGING_INBOUND_ENABLED:false}
